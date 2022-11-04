@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Cocktail Club</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="headerLista">
+                <li class="logoNegro"><a href="index.html"><img src="imagenes/logoCC.png" alt="logo"></a></li>
+                <li class="itemHeader"><a href="#esteMes">BOX</a></li>
+                <li class="itemHeader"><a href="#nosotros">NOSOTROS</a></li>
+                <li class="itemHeader"><a href="#asociate">ASOCIATE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-------------------------------------------------------Cartel Usuario: en header-->
+    <div class="userActiv"></div>
+    <!-------------------------------------------------------Carrousel Primera Seccion-->
+    <section class="carrito">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="imagenes/fondoCarrito.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="imagenes/fondoCarrito2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="imagenes/fondoCarrito3.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="carteleraCarrete">
+            <h1>Cocktail Club</h1>
+            <p>En CC preparamos para nuestros socios 4 BOX diferentes con todos los ingredientes necesarios para ser el
+                barman de tus cocktail. La entrega se renueva mensualemnte.</p>
+            <h2><a href="#asociate">ASOCIATE!</a></h2>
+        </div>
+    </section>
+
+    <!-------------------------------------------------------Segunda seccion-->
+    <section class="segundaSeccion">
+        <article class="dinamica">
+            <h3>Dinamica</h3>
+            <p>Nuestra idea es que nuestros socios puedan disfrutar de un cocktail de primer nivel desde la comodidad de
+                su casa. Tenemos 4 niveles de suscripcion, a cada uno le corresponde una BOX con todos los ingredinetes
+                necesarios para la elaboracion de tu cocktail, ésta cambia mes a mes. </p>
+        </article>
+        <article class="esteMes" id="esteMes">
+            <div>
+                <h3>Este mes:</h3>
+                <ul>
+                    <li><button class="botonPack" id="botonPackPremiun">Pack Premiun</button></li>
+                    <li><button class="botonPack" id="botonPackOro">Pack Oro</button></li>
+                    <li><button class="botonPack" id="botonPackPlata">Pack Plata </button></li>
+                    <li><button class="botonPack" id="botonPackPrevia">Pack Previa</button></li>
+                </ul>
+            </div>
+
+            <div class="muestraPack" id="muestraPackPremiun">
+                <h4>Pack Premiun</h4>
+                <h5>SUPER BAILEYS</h5>
+                <h6>Incluye:</h6>
+                <ul>
+                    <li>1 botella Baileys</li>
+                    <li>1 leche</li>
+                    <li>1 barra de chocolate</li>
+                    <li>1/2 kilo de helado de Vainilla</li>
+                </ul>
+            </div>
+            <div class="muestraPack" id="muestraPackOro">
+                <h4>Pack Oro</h4>
+                <h5>WHISKY SOUR </h5>
+                <h6>Incluye:</h6>
+                <ul>
+                    <li>1 botella de Whisky Jameson</li>
+                    <li>1 jugo de limon</li>
+                    <li>Limon deshidratado</li>
+                    <li>Azucar</li>
+                </ul>
+            </div>
+            <div class="muestraPack" id="muestraPackPlata">
+                <h4>Pack Plata</h4>
+                <h5>GIN TONIC</h5>
+                <h6>Incluye:</h6>
+                <ul>
+                    <li>1 botella de Gin Beefeather</li>
+                    <li>2 botellas de Agua tonica</li>
+                    <li>Pepinos</li>
+                    <li>Hojas de menta</li>
+                </ul>
+            </div>
+            <div class="muestraPack" id="muestraPackPrevia">
+                <h4>Pack Previa</h4>
+                <h5>DESTORNILLADOR</h5>
+                <h6>Incluye:</h6>
+                <ul>
+                    <li>1 botella de Vodka Skyy</li>
+                    <li>2 botellas de Jugo de Naranja Citric</li>
+                </ul>
+            </div>
+        </article>
+    </section>
+
+
+
+
+    <!-------------------------------------------------------Formularios-->
+    <div class="asociate__ingresar">
+        <section class="asociateSeccion" id="asociate">
+            <h3>ASOCIATE!</h3>
+            <p>Recibi mes a mes los mejores <span>"Cocktail BOX"</span>.<p>
+                    <form id="form9">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" placeholder="minimo 2 caracteres"><br>
+                        <label for="subname">Apellido:</label>
+                        <input type="text" id="subname" placeholder="minimo 2 caracteres"><br>
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" placeholder="Ingrese su edad"><br>
+                        <label for="email">Ingrese su email:</label>
+                        <input type="email" id="email" placeholder="Ingrese email"><br>
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" placeholder="minimo 6 caracteres"><br>
+                        <label for="pass">Repetir:</label>
+                        <input type="password" id="pass" placeholder="minimo 6 caracteres"><br>
+                        <!-- <div class="elegirBox" id="formBox">
+                            <fieldset id="opBox">
+                                <legend>Elija su BOX</legend>
+                                <div class="opcionRadio">
+                                    <label for="opBox">Pack Premiun</label>
+                                    <input type="radio" name="opBox" id="pPremiun" value="Pack Premiun">
+                                </div>
+                                <div class="opcionRadio">
+                                    <label for="opBox">Pack Oro</label>
+                                    <input type="radio" name="opBox" id="pOro" value="Pack Oro">
+                                </div>
+                                <div class="opcionRadio">
+                                    <label for="opBox">Pack Plata</label>
+                                    <input type="radio" name="opBox" id="pPlata" value="Pack Plata">
+                                </div>
+                                <div class="opcionRadio">
+                                    <label for="opBox">Pack Previa</label>
+                                    <input type="radio" name="opBox" id="pPrevia" value="Pack Previa">
+                                </div>
+                            </fieldset>
+                            <fieldset id="opDuracion">
+                                <legend>¿Por cuantos meses?</legend>
+
+                                <div class="opcionRadioM">
+                                    <label for="opDuracion">3</label>
+                                    <input type="radio" name="opDuracion" id="tres" value="3">
+                                </div>
+                                <div class="opcionRadioM">
+                                    <label for="opDuracion">6</label>
+                                    <input type="radio" name="opDuracion" id="seis" value="6">
+                                </div>
+                                <div class="opcionRadioM">
+                                    <label for="opDuracion">9</label>
+                                    <input type="radio" name="opDuracion" id="nueve" value="9">
+                                </div>
+                                <div class="opcionRadioM">
+                                    <label for="opDuracion">12</label>
+                                    <input type="radio" name="opDuracion" id="doce" value="12">
+                                </div>
+                            </fieldset>
+                        </div> -->
+                        <div class="botonesForm">
+                            <input class="formBoton" type="reset" id="reset" value="Borrar">
+                            <input class="formBoton" type="submit" id="send">
+                        </div>
+                    </form>
+        </section>
+
+        <section class="ingresarSeccion" id="ingresar">
+            <h3>Ingresa:</h3>
+            <p>¿Ya sos <span>socio</span> del Cocktail Club?<p>
+                    <form id="formIngresar">
+                        <label for="nombreIn">Nombre:</label>
+                        <input type="text" id="nombreIn" placeholder="Ingrese su nombre"><br>
+                        <label for="subnameIn">Apellido:</label>
+                        <input type="text" id="subnameIn" placeholder="Ingrese su apellido"><br>
+                        <label for="emailIn">Ingrese su email:</label>
+                        <input type="email" id="emailIn" placeholder="Ingrese email"><br>
+                        <label for="passwordIn">Contraseña:</label>
+                        <input type="password" id="passwordIn" placeholder="Ingrese su contraseña"><br>
+                        <div class="botonesForm">
+                            <input class="formBotonIn" type="reset" id="resetIn" value="Borrar">
+                            <input class="formBotonIn" type="submit" id="sendIn">
+                        </div>
+                    </form>
+
+        </section>
+        <!-------------------------------------------------------Usuario encontrado-->
+        <div id="usuarioEncontrado"></div>
+        <div id="resumenUsuario"></div>
+    </div>
+
+
+
+    <input id="search" type="text" class="input" placeholder="Buscar producto">
+    <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+    </header>
+
+
+    <div class="seleccion">
+        <select id="selecTalles">
+            <option value="all">Todos</option>
+            <option value="L">Large</option>
+            <option value="M">Medium</option>
+            <option value="S">Small</option>
+        </select>
+    </div>
+
+    <main id="contenedor-productos">
+        <div class="producto">
+            <div class="card">
+                <div class="card-image">
+                    <img src="imagenes/bebidas/whiskySour.jpeg">
+                    <span class="card-title">Whisky Sour</span>
+                    <a id="boton" class="btn-floating halfway-fab waves-effect waves-light red"><i
+                            class="material-icons">add_shopping_cart</i></a>
+                </div>
+                <div class="card-content">
+                    <p>coctail Whisky Sour</p>
+                    <p>Pack Premiun</p>
+                    <p> $2900</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
+                <!-- <div class="productoEnCarrito">
+                <p>Buzo 1</p>
+                <p>Precio: $1200</p>
+                <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+            </div>   -->
+            </div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+            <div id="terminar" style="display: flex; justify-content: flex-end;"></div>
+        </div>
+    </div>
+
+    <section class="quienesSomos" id="nosotros">
+        <div class="qSDiv">
+            <h3>¿Quienes Somos?</h3>
+            <p>Somos un grupo de amigos del sur de Buenos Aires, apasionados por la cocteleria. Algunos Bartender
+                Profesional, otro profesionales del consumo de coctail, lo cierto es que queremos llevar los mejores
+                sabores y la mejor calidad a la casa de nuestros colegas socios del club. </p>
+        </div>
+        <div>
+            <div class="qSDiv">
+                <img src="imagenes/amigos.jpg" alt="nostros">
+            </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-------------------------------------------------------Footer-->
+    <footer>
+        <div>
+            <ul class="footList">
+                <li class="logoNegro"><a href="index.html"><img src="imagenes/logoCC.png" alt="logo"></a></li>
+                <li class="itemFoot"><a href="#esteMes">BOX</a></li>
+                <li class="itemFoot"><a href="#nosotros">NOSOTROS</a></li>
+                <li class="itemFoot"><a href="#asociate">ASOCIATE</a></li>
+            </ul>
+        </div>
+        <div class="divRedes">
+            <h4>Redes</h4>
+            <ul>
+                <li class="itemRedes"><img src="imagenes/email.png" alt="logo email">
+                    <p>cocktailclub@gmail.com</p>
+                </li>
+                <li class="itemRedes"> <img src="imagenes/instagram.png" alt="logo instagram">
+                    <p>/Cocktal Club</p>
+                </li>
+                <li class="itemRedes"><img src="imagenes/facebook.png" alt="logo faceboo">
+                    <p>/Cocktail Club</p>
+                </li>
+                <li class="itemRedes"><img src="imagenes/whatsapp.png" alt="logo whatsapp">
+                    <p>(011)3452-5464</p>
+                </li>
+            </ul>
+        </div>
+        <div class="mayorEdad">
+            <h4>Sitio</h4>
+            <img src="imagenes/mas18.png" alt="mas18">
+        </div>
+    </footer>
+    <!-------------------------------------------------------script boostrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <!-------------------------------------------------------script-->
+    <script src="js//combos.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/scriptClases.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
